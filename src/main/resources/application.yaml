@@ -1,3 +1,14 @@
 spring:
   application:
     name: spring-boot-chromadb
+  ai:
+    openai:
+      base-url: http://192.168.3.178:1234
+      api-key: sk-lm-1yWHWppV:ma7rLZVfm7AhqLp9ZFJy
+    vectorstore:
+      chroma:
+        client:
+          host: http://localhost
+          port: 8000
+        collection-name: java_documents
+        initialize-schema: true
